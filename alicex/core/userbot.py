@@ -1,4 +1,4 @@
-from pyrogram import Client
+from pyrogram import Client 
 import config
 from ..logging import LOGGER
 
@@ -44,8 +44,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info("Starting Assistants...")
-
+        LOGGER(__name__).info(f"Starting Assistants...")
         if config.STRING1:
             await self.one.start()
             try:
@@ -71,7 +70,7 @@ class Userbot(Client):
             await self.two.start()
             try:
                 await self.two.join_chat("learning_bots")
-                await self.two.join_chat("thanosprosss")
+                await self.one.join_chat("thanosprosss")
             except:
                 pass
             assistants.append(2)
@@ -92,7 +91,7 @@ class Userbot(Client):
             await self.three.start()
             try:
                 await self.three.join_chat("learning_bots")
-                await self.three.join_chat("thanosprosss")
+                await self.one.join_chat("thanosprosss")
             except:
                 pass
             assistants.append(3)
@@ -113,7 +112,7 @@ class Userbot(Client):
             await self.four.start()
             try:
                 await self.four.join_chat("learning_bots")
-                await self.four.join_chat("thanosprosss")
+                await self.one.join_chat("thanosprosss")
             except:
                 pass
             assistants.append(4)
@@ -134,7 +133,7 @@ class Userbot(Client):
             await self.five.start()
             try:
                 await self.five.join_chat("learning_bots")
-                await self.five.join_chat("thanosprosss")
+                await self.one.join_chat("thanosprosss")
             except:
                 pass
             assistants.append(5)
@@ -152,7 +151,7 @@ class Userbot(Client):
             LOGGER(__name__).info(f"Assistant Five Started as {self.five.name}")
 
     async def stop(self):
-        LOGGER(__name__).info("Stopping Assistants...")
+        LOGGER(__name__).info(f"Stopping Assistants...")
         try:
             if config.STRING1:
                 await self.one.stop()
