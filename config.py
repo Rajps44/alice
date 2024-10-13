@@ -7,22 +7,22 @@ from pyrogram import filters
 load_dotenv()
 
 # Get this value from my.telegram.org/apps
-API_ID = API_ID
-API_HASH = "API_HASH"
+API_ID = 29013900
+API_HASH = "b95a8d339e5e8ae771fd59b920d7cbd7"
 
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = "BOT_TOKEN"
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = "MONGO_DB_URI"
+MONGO_DB_URI = "mongodb+srv://borahalisha14:6r8eJKjKlsEKFzqP@cluster0.0r0iv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 60))
 
 # Chat id of a group for logging bot's activities
-LOG_GROUP_ID = LOG_GROUP_ID
+LOG_GROUP_ID = -1002192763590
 
 # Get this value from @ultron2_robot on Telegram by /id
-OWNER_ID = OWNER_ID
+OWNER_ID = 6174868004
 
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
@@ -32,15 +32,15 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/rishabhops/alice",
+    "https://github.com/Rajps44/alice",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = "https://t.me/thanos_pro"
-SUPPORT_GROUP = "https://t.me/thanosprosss"
+SUPPORT_CHANNEL = "https://t.me/+U59IwGfBP8FjNzE1"
+SUPPORT_GROUP = "https://t.me/+U59IwGfBP8FjNzE1"
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
