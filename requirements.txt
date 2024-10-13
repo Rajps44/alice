@@ -28,5 +28,5 @@ youtube-search
 youtube-search-python
 pymongo
 nano
-tgcalls==3.0.0
 pytgcalls==2.1.0
+tgcalls==3.0.0.dev6
