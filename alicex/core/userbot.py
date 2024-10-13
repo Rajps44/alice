@@ -1,5 +1,7 @@
 from pyrogram import Client 
+
 import config
+
 from ..logging import LOGGER
 
 assistants = []
@@ -99,7 +101,7 @@ class Userbot(Client):
                 await self.three.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
+                    "Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
                 exit()
             self.three.id = self.three.me.id
@@ -120,7 +122,7 @@ class Userbot(Client):
                 await self.four.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
+                    "Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
                 exit()
             self.four.id = self.four.me.id
@@ -141,7 +143,7 @@ class Userbot(Client):
                 await self.five.send_message(config.LOG_GROUP_ID, "Assistant Started")
             except:
                 LOGGER(__name__).error(
-                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin!"
+                    "Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
                 )
                 exit()
             self.five.id = self.five.me.id
