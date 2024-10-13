@@ -29,4 +29,3 @@ youtube-search-python
 pymongo
 nano
 pytgcalls==2.1.0
-
