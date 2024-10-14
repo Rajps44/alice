@@ -30,7 +30,7 @@ py-tgcalls==0.9.7
 
 pykeyboard
 
-git+https://github.com/KurimuzonAkuma/pyrogram
+pyrofork 
 
 python-dotenv
 
